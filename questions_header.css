@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+  min-width: 1000px;
+}
+
+.header {
+  width: 100%;
+  height: 47px;
+  position: fixed;
+  background-color: #fafafb;
+  border: 1px solid red;
+  -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
+  z-index: 3;
+}
+
+.header__wrap {
+  width: 1000px;
+  height: 47px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header__logo {
+  width: 150px;
+  height: inherit;
+  padding: 0 8px;
+  float: left;
+  background-size: 95%;
+  background-image: url("sprites.svg?v=fcc0ea44ba27");
+  background-repeat: no-repeat;
+  border: 1px solid red;
+}
+
+.header__logo > a {
+  width: inherit;
+  height: inherit;
+  display: block;
+}
+
+.header__gnb {
+  width: 282px;
+  height: 32px;
+  margin: 8px auto auto 5px;
+  float: left;
+}
+
+.header__gnb > li {
+  height: 15px;
+  padding: 6px 16px;
+  float: left;
+  font-size: 0.8em;
+  border: 1px solid red;
+}
+
+.header__service {
+  width: 530px;
+  margin-top: 8px;
+  float: left;
+  border: 1px solid red;
+}
+
+.header__search {
+  width: 380px;
+  height: 30px;
+  float: left;
+  border: 1px solid red;
+}
+
+.header__search > input[type="search"] {
+  width: 346px;
+  height: 28px;
+}
+
+.header__user-dashboard {
+  width: 140px;
+  margin-left: 5px;
+  text-align: center;
+  float: right;
+  border: 1px solid red;
+}
+
+.header__user-dashboard > a {
+  width: 58px;
+  display: inline-block;
+}

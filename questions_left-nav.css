@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid pink;
+}
+
+.main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.left-nav {
+  width: 164px;
+  height: 100%;
+  top: 45px;
+  position: fixed;
+  overflow: hidden;
+  background-color: #fff;
+  border-right: 0.5px solid #ccc;
+  z-index: 2;
+}
+
+.left-nav__list {
+  margin-top: 20px;
+}
+
+.left-nav__list > li {
+  width: 100%;
+  height: 40px;
+  padding: 6px 10px;
+  line-height: 28px;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  border: 1px solid red;
+  background-color: chartreuse;
+}
+
+.left-nav__list .icon-column {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  display: inline-block;
+  text-align: center;
+  background-color: blueviolet;
+  font-size: 1em;
+}
+
+.left-nav__list > li:nth-child(3) {
+  font-weight: bold;
+  border-right: 1.5px solid #f48024;
+}
+
+.left-nav__list > li:nth-child(2) ~ li:not(:last-child) {
+  height: 30px;
+  padding: 4px 8px !important;
+  line-height: 22px !important;
+  background-color: aqua;
+}
+
+.left-nav__list > li:last-child {
+  margin-top: 30px;
+  padding: 5px 0 5px 7px;
+  background-color: aqua;
+}
+
+.left-nav__others {
+  background-color: #f48024;
+}
+
+.left-nav__row:first-child {
+  overflow: hidden;
+}
+
+.left-nav__row:first-child > span {
+  font-size: 0.8em;
+  display: inline-block;
+  border: 1px solid red;
+}
+
+.left-nav__row:first-child > a {
+  font-size: 0.8em;
+  display: block;
+  float: right;
+  border: 1px solid red;
+}
+
+.left-nav__row:last-child {
+  margin-top: 5px;
+}
+
+.left-nav__row:last-child > i {
+  font-size: 1.2em;
+}
+
+.left-nav__row:last-child > span {
+  margin-left: 5px;
+}
