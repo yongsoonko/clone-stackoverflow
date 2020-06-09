@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="questions_header.css" />
     <link rel="stylesheet" href="questions_left-nav.css" />
+    <link rel="stylesheet" href="questions_right-nav.css" />
     <link rel="stylesheet" href="questions_content.css" />
   </head>
   <body>
@@ -312,46 +313,169 @@
               </div>
             </div>
           </div>
+          <div class="qna__per-page">
+            <a class="qna__perpage qna__btn--current" href="#">15</a>
+            <a class="qna__perpage" href="#">30</a>
+            <a class="qna__perpage" href="#">50</a>
+            <span>per page</span>
+          </div>
+          <div class="qna__page-list">
+            <a class="qna__page-btn qna__btn--current" href="#">1</a>
+            <a class="qna__page-btn" href="#">1</a>
+            <a class="qna__page-btn" href="#">2</a>
+            <a class="qna__page-btn" href="#">3</a>
+            <a class="qna__page-btn" href="#">4</a>
+            <a class="qna__page-btn" href="#">5</a>
+            <span>…</span>
+            <a class="qna__page-btn" href="#">1308238</a>
+            <a class="qna__page-btn" href="#">Next</a>
+          </div>
         </div>
         <!--qna-column-->
         <div class="right-nav">
-          <div id="blog">
-            <ul>
+            <ul class="right-nav__board">
+              <li class="right-nav__title">
+                The Overflow Blog
+              </li>
               <li>
-                <div class="blog-row">
-                  <span>The Overflow Blog</span>
+                <div class="right-nav__icon-column">
+                  <span><i class="fas fa-pen"></i></span>
+                </div>
+                <div class="right-nav__anchor-column">
+                  <a href="#">Why is Kubernetes getting so popular?</a>
                 </div>
               </li>
               <li>
-                <div class="blog-row">
-                  <span>Why is Kubernetes getting so popular?</span>
+                <div class="right-nav__icon-column">
+                  <span><i class="fas fa-pen"></i></span>
+                </div>
+                <div class="right-nav__anchor-column">
+                  <a href="#">Podcast 240: JavaScript is ready to get its own place</a>
+                </div>
+              </li>
+              <li class="right-nav__title">Featured on Meta</li>
+              <li>
+                <div class="right-nav__icon-column">
+                  <span><i class="far fa-clipboard"></i></span>
+                </div>
+                <div class="right-nav__anchor-column">
+                  <a href="#">
+                    What posts should be escalated to staff using
+                    [status-review], and how do I…
+                  </a>
                 </div>
               </li>
               <li>
-                <div class="blog-row">
-                  <span>Why is Kubernetes getting so popular?</span>
+                <div class="right-nav__icon-column">
+                  <span><i class="far fa-clipboard"></i></span>
+                </div>
+                <div class="right-nav__anchor-column">
+                  <a href="#">
+                    We're switching to CommonMark
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="right-nav__icon-column">
+                  <span><i class="fab fa-stack-overflow"></i></span>
+                </div>
+                <div class="right-nav__anchor-column">
+                  <a href="#">
+                    Can we have Hot Meta Posts re-enabled now that SE has admitted that Meta…
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="right-nav__icon-column">
+                  <span><i class="fab fa-stack-overflow"></i></span>
+                </div>
+                <div class="right-nav__anchor-column">
+                  <a href="#">
+                    How an interview code submission that wasn’t even submitted changed our process
+                  </a>
                 </div>
               </li>
             </ul>
-            <div class="meta">
+            <div class="related-tags">
+              <h4 class="related-tags__title">Related Tags</h4>
               <ul>
-                <li>Featured on Meta</li>
+                <li><a href="#" class="related-tags__language">javascript</a><span class="related-tags__count">× 2022893</span></li>
+                <li><a href="#" class="related-tags__language">java</a><span class="related-tags__count">× 1682012</span></li>
+                <li><a href="#" class="related-tags__language">python</a><span class="related-tags__count">× 1450595</span></li>
+                <li><a href="#" class="related-tags__language">c#</a><span class="related-tags__count">× 1411563</span></li>
+                <li><a href="#" class="related-tags__language">php</a><span class="related-tags__count">× 1354585</span></li>
+                <li><a href="#" class="related-tags__language">android</a><span class="related-tags__count">× 1280074</span></li>
+                <li><a href="#" class="related-tags__language">html</a><span class="related-tags__count">× 999940</span></li>
+                <li><a href="#" class="related-tags__language">jquery</a><span class="related-tags__count">× 991610</span></li>
+                <li><a href="#" class="related-tags__language">c++</a><span class="related-tags__count">× 675339</span></li>
+                <li><a href="#" class="related-tags__language">css</a><span class="related-tags__count">× 666970</span></li>
+              </ul>
+            </div>
+            <div class="hot-questions">
+              <h4 class="hot-questions__title">Hot Network Questions</h4>
+              <ul>
                 <li>
-                  <span>
-                    What posts should be escalated to staff using
-                    [status-review], and how do I…
-                  </span>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    How to determine if a point is within a concave 3D polyhedron?
+                  </a></div>
                 </li>
                 <li>
-                  <span>
-                    What posts should be escalated to staff using
-                    [status-review], and how do I…
-                  </span>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    Should I mill myself if I have graveyard synergies in my deck, but haven't drawn them yet?
+                  </a></div>
+                </li>
+                <li>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    When someone cites one of your papers, is it a good idea to send an email to the authors to show appreciation?
+                  </a></div>
+                </li>
+                <li>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    Is it typical for there to be no real design prior to someone being assigned a task?
+                  </a></div>
+                </li>
+                <li>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    Why are savory crepes from some restaurants brown?
+                  </a></div>
+                </li>
+                <li>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    The meaning of permanent dipole moment
+                  </a></div>
+                </li>
+                <li>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    Why is everyone so focused on the black box in LOST?
+                  </a></div>
+                </li>
+                <li>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    Is it wrong livelihood to pick up cherries?
+                  </a></div>
+                </li>
+                <li>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    How fast can you typically hike through untracked forest?
+                  </a></div>
+                </li>
+                <li>
+                  <div class="hot-questions__icon-column"></div>
+                  <div class="hot-questions__anchor-column"><a href="#">
+                    How to deal with non-OR managers?
+                  </a></div>
                 </li>
               </ul>
             </div>
-            <div class="related-tags"></div>
-            <div class="hot-questions"></div>
           </div>
         </div>
         <!--right-nav-->
