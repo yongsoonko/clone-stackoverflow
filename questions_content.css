@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
 .qna {
-  width: 800px;
-  top: 50px;
-  left: 170px;
   padding: 20px;
-  position: relative;
-  z-index: 1;
+  float: left;
+  border-left: 0.5px solid #ccc;
+  /* background-color: darkgray; */
 }
 
 .qna::after {
@@ -16,8 +14,8 @@
 }
 
 .qna__column:first-child {
-  width: 450px;
-  border: 1px solid orange;
+  width: 650px;
+  /* border: 1px solid orange; */
   float: left;
 }
 
@@ -135,9 +133,9 @@
 }
 
 .summary {
-  height: 190px;
+  height: 150px;
   padding: 10px 3px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .summary__rating-column {
@@ -162,7 +160,7 @@
 }
 
 .summary__row {
-  width: 375px;
+  width: 570px;
   height: inherit;
   float: right;
 }
@@ -233,3 +231,41 @@
   font-size: 0.7em;
 }
 
+.summary__reputation > span:first-child{
+  font-weight: bold;
+}
+
+.qna__per-page {
+  padding-top: 50px;
+  float: right;
+}
+
+.qna__page-list {
+  padding-top: 50px;
+  float: left;
+}
+
+.qna__page-btn {
+  min-width: 8px;
+  height: 25px;
+  padding: 2px 9px;
+  font-size: 0.8em;
+  line-height: 25px;
+  border-radius: 4px;
+  text-align: center;
+  border: 0.5px #ccc solid;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.qna__per-page > span, .qna__page-list > span {
+  margin: 0 10px;
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+.qna__btn--current {
+  background-color: #f48024;
+  color: #fff;
+  border-radius: 0px;
+}

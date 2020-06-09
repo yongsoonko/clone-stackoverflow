@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
 .main {
-  width: 1000px;
+  width: 1200px;
+  top: 45px;
   margin: 0 auto;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
+  position: relative;
 }
 
 .main::after {
@@ -13,18 +15,18 @@
 }
 
 .left-nav {
-  width: 164px;
-  height: 100%;
-  top: 45px;
-  position: fixed;
-  overflow: hidden;
+  width: 165px;
+  float: left;
   background-color: #fff;
-  border-right: 0.5px solid #ccc;
-  z-index: 2;
+  z-index: 1;
+  top: 50px;
+  position: sticky;
+  /* background-color: burlywood; */
+  /* position: fixed; */
 }
 
 .left-nav__list {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .left-nav__list > li {
@@ -34,8 +36,8 @@
   line-height: 28px;
   font-size: 0.8em;
   box-sizing: border-box;
-  border: 1px solid red;
-  background-color: chartreuse;
+  /* border: 1px solid red; */
+  /* background-color: chartreuse; */
 }
 
 .left-nav__list .icon-column {
@@ -44,30 +46,31 @@
   margin-right: 5px;
   display: inline-block;
   text-align: center;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   font-size: 1em;
 }
 
 .left-nav__list > li:nth-child(3) {
   font-weight: bold;
-  border-right: 1.5px solid #f48024;
+  border-right: 3px solid #f48024;
 }
 
 .left-nav__list > li:nth-child(2) ~ li:not(:last-child) {
   height: 30px;
   padding: 4px 8px !important;
   line-height: 22px !important;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .left-nav__list > li:last-child {
+  height: 75px;
   margin-top: 30px;
   padding: 5px 0 5px 7px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .left-nav__others {
-  background-color: #f48024;
+  /* background-color: #f48024; */
 }
 
 .left-nav__row:first-child {
@@ -77,22 +80,23 @@
 .left-nav__row:first-child > span {
   font-size: 0.8em;
   display: inline-block;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .left-nav__row:first-child > a {
   font-size: 0.8em;
   display: block;
   float: right;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .left-nav__row:last-child {
-  margin-top: 5px;
+  margin-top: -5px;
 }
 
 .left-nav__row:last-child > i {
   font-size: 1.2em;
+  color: #f48024;
 }
 
 .left-nav__row:last-child > span {
