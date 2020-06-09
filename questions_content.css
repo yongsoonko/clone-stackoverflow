@@ -101,7 +101,7 @@
 .qna__filters > ul > li {
   float: left;
   padding: 10px;
-  background-color: #e4e6e8;
+  background-color: #fff;
   border: 1px solid #535353;
   border-right: none;
   font-size: 0.9em;
@@ -117,14 +117,6 @@
   border-radius: 0 4px 4px 0;
 }
 
-.btn--gray-small {
-  height: 32px;
-  line-height: 10px;
-  font-size: 0.9em;
-  border-radius: 4px;
-  border: 0.5px solid #535353;
-}
-
 .qna__filter-btn {
   width: 60px;
   margin-left: 15px;
@@ -132,10 +124,31 @@
   float: right;
 }
 
+.btn--gray-small {
+  width: 75px;
+  height: 32px;
+  line-height: 10px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  color: #044472;
+  border: 0.5px solid #ccc;
+  background-color: #b3d3ea;
+}
+
+.btn--gray-small:focus {
+  outline: none;
+}
+
+.btn--gray-small span {
+  font-size: 0.9em;
+}
+
 .summary {
   height: 150px;
-  padding: 10px 3px;
+  margin-top: 5px;
+  padding: 10px 3px 0;
   /* border: 1px solid green; */
+  border-bottom: 0.5px solid #ccc;
 }
 
 .summary__rating-column {
@@ -170,6 +183,7 @@
   margin-top: 7px;
   display: block;
   font-size: 0.8em;
+  line-height: 16px;
   word-wrap: break-word;
 }
 
@@ -229,10 +243,31 @@
   top: 20px;
   left: 40px;
   font-size: 0.7em;
+  background-image: url();
 }
 
-.summary__reputation > span:first-child{
+.summary__reputation > span:first-child {
   font-weight: bold;
+}
+
+.summary__reputation [class^="badge"] {
+  margin-left: 3px;
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background-image: url("https://cdn.sstatic.net/Img/unified/sprites.png?v=0786b22b9381");
+}
+
+.summary__reputation .badge1 {
+  background-position: -102px -402px;
+}
+
+.summary__reputation .badge2 {
+  background-position: -82px -402px;
+}
+
+.summary__reputation .badge3 {
+  background-position: -62px -402px;
 }
 
 .qna__per-page {
@@ -258,7 +293,8 @@
   background-color: #fff;
 }
 
-.qna__per-page > span, .qna__page-list > span {
+.qna__per-page > span,
+.qna__page-list > span {
   margin: 0 10px;
   font-size: 0.8em;
   opacity: 0.8;

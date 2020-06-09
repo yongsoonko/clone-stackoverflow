@@ -2,6 +2,7 @@
 
 body {
   min-width: 1200px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .header {
@@ -13,7 +14,7 @@ body {
   -webkit-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.75);
-  z-index: 10;
+  z-index: 3;
 }
 
 .header__wrap {
@@ -31,31 +32,43 @@ body {
   background-size: 95%;
   background-image: url("sprites.svg?v=fcc0ea44ba27");
   background-repeat: no-repeat;
+  z-index: 10;
   /* border: 1px solid red; */
 }
 
 .header__logo > a {
+  height: inherit;
   display: block;
+}
+
+.header__logo:hover {
+  background-color: #ddd;
 }
 
 .header__gnb {
   width: 282px;
   height: 32px;
+  line-height: 20px;
   margin: 8px auto auto 5px;
   float: left;
 }
 
 .header__gnb > li {
-  height: 15px;
+  height: 20px;
   padding: 6px 16px;
   float: left;
   font-size: 0.8em;
   /* border: 1px solid red; */
 }
 
+.header__gnb > li:hover {
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
 .header__service {
   width: 725px;
-  margin-top: 8px;
+  margin-top: 9px;
   float: left;
   /* border: 1px solid red; */
 }
@@ -64,12 +77,44 @@ body {
   width: 575px;
   height: 30px;
   float: left;
+  border: 0.5px solid #bbb;
+  border-radius: 3px;
+  position: relative;
   /* border: 1px solid red; */
+}
+
+.header__search-icon-column {
+  width: 22px;
+  height: inherit;
+  display: inline-block;
+  text-align: right;
+  line-height: 30px;
+  /* background-color: red; */
+}
+
+.header__search-icon-column i {
+  opacity: 0.3;
 }
 
 .header__search > input[type="search"] {
   width: 535px;
-  height: 28px;
+  height: 18px;
+  top: -1px;
+  line-height: 18px;
+  /* background-color: red; */
+  border: none;
+  opacity: 0.8;
+  position: relative;
+}
+
+.header__search > input[type="search"]:focus {
+  outline: none;
+}
+
+.header__search:focus-within {
+  -webkit-box-shadow: 0px 0px 11px 9px rgba(213, 235, 252, 1);
+  -moz-box-shadow: 0px 0px 11px 9px rgba(213, 235, 252, 1);
+  box-shadow: 0px 0px 11px 9px rgba(213, 235, 252, 1);
 }
 
 .header__user-dashboard {
